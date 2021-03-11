@@ -62,9 +62,10 @@ function deleteCheck(event){
         todo.classList.add("fall");
     //  todo.remove();
         // Do not want to simply disappear the completed ToDO
-        todo.addEventListener('transitioned', function(){
+        todo.addEventListener('transitionend', function(){
+            console.log("lavda lassan");
             todo.remove();
-        })
+        });
     }
 
 
