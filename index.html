@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-
     <link rel="stylesheet" href="./style.css">
     <title>To-Do</title>
 </head>
@@ -20,11 +19,19 @@
         <button class="todo-button" type="submit">
             <i class="fas fa-plus-square"></i>
         </button>
+
+        <div class="select">
+            <select name="todos" class="filter-todo">
+                <option value="all"> All</option>
+                <option value="completed"> Completed </option>
+                <option value="notcompleted"> Not Completed</option>
+            </select> 
+        </div>
+        <div class="todo-container">
+            <ul class="todo-list">
+            </ul>
+        </div>
     </form>
-    <div class="todo-container">
-        <ul class="todo-list">
-        </ul>
-    </div>
     <script src ="./app.js"></script>
 </body>
 </html>

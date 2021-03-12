@@ -12,7 +12,7 @@ todoList.addEventListener('click', deleteCheck);
 // Functions
 
 function addToDo(event){
-    
+
     //  Prevents form from submitting
     event.preventDefault()
 
@@ -46,7 +46,7 @@ function addToDo(event){
     todoList.appendChild(todoDiv);
 
     // Clear ToDo input value
- 
+
     todoInput.value="";
 
 }
@@ -63,7 +63,6 @@ function deleteCheck(event){
     //  todo.remove();
         // Do not want to simply disappear the completed ToDO
         todo.addEventListener('transitionend', function(){
-            console.log("lavda lassan");
             todo.remove();
         });
     }
@@ -77,4 +76,4 @@ function deleteCheck(event){
         todo.classList.toggle("completed");
     }
 
-} 
+}
